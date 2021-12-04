@@ -1,0 +1,50 @@
+.main {
+    display: flex;
+    padding: 24px 15%;
+    flex-direction: column;
+}
+.filterSection {
+    display: flex;
+    margin-right: 36px;
+    margin-bottom: 24px;
+    justify-content: flex-end;
+}
+.filterLabel {
+    color: #337ac0;
+    font-weight: bold;
+    margin-right: 8px;
+}
+.carFilter {
+    position: relative;
+    top: -4px;
+    width: 150px;
+    padding: 4px 10px;
+}
+.slider {
+    padding: 24px;
+}
+.sliderControls {
+    display: flex;
+    padding: 30px;
+    justify-content: flex-end;
+}
+.slideLeft {
+    height: 40px;
+    cursor: pointer;
+    padding-left: 20px;
+    transform: rotateZ(180deg);
+}
+.slideRight {
+    height: 40px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    .sliderControls {
+        display: none !important;
+    }
+
+.filterSection {
+        margin-right: 36px;
+    }
+}
